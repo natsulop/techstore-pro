@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore Pro | Inicio </title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+     <!-- BARRA SCROLL — S06: div vacío, el CSS lo posiciona y el JS le da el ancho -->
+     <div class="barra-scroll" id="barra-scroll"></div>
+     <!-- ============================================================
+          HEADER — Copia este bloque IGUAL en todas las páginas
+          Solo cambia el class="activo" al enlace de la página actual
+          ============================================================ -->
+     <header class="header">
+       <div class="header-logo">
+         <!--
+           ✏️ Opción A: Logo con imagen
+           <img src="img/logo.png" alt="Logo mi proyecto" class="logo-img">
+           ✏️ Opción B: Solo texto (más fácil para empezar)
+         -->
+         <span class="logo-icono">💻</span>
+         <span class="logo-texto">TechStore Pro</span>
+       </div>
+   
+       <!-- Botón hamburguesa — JavaScript lo activará en la próxima sesión -->
+       <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+         <span></span>
+         <span></span>
+         <span></span>
+       </button>
+   
+       <nav id="nav-menu" class="nav-menu">
+         <!-- class="activo" va en el enlace de la página actual -->
+         <a href="index.html" class="activo">Inicio</a>
+         <!--
+           ✏️ Ajusta los nombres según tu proyecto:
+           - Tienda: "Productos", "Ofertas"
+           - Servicios: "Servicios", "Portafolio"
+           - Educación: "Cursos", "Instructores"
+           - Restaurante: "Menú", "Reservas"
+         -->
+         <a href="productos.html">Productos</a>
+         <a href="nosotros.html">Nosotros</a>
+         <a href="contacto.html">Contacto</a>
+       
+       </nav>
+    
+
+       <div class="header-acciones"></div>
+         <button id ="btn-tema" class="btn tema "aria-label="cambiar tema ">🌙</button>
+         <div class="carrito-badge-contenedor">
+           <span>🛒</span>
+           <span class="carrito-badge" id="carrito-badge">0</span>
+         </div>
+       </div>
+     </header>
+     <main>
+        <section class="seccion-carrito" id="seccion-carrito">
+          <div class="seccion-header">
+            <h2>🛒 Mi carrito</h2>
+            <p id="carrito-resumen">Cargando...</p>
+          </div>
+          
+          <!-- ✏️ La lista de productos se genera con JavaScript -->
+          <div id="lista-carrito"></div>
+          
+          <!-- Botón para vaciar el carrito -->
+          <div class="carrito-acciones">
+            <button id="btn-vaciar" class="btn btn-secundario">🗑️ Vaciar carrito</button>
+            <a href="index.html" class="btn btn-primario">Seguir comprando</a>
+          </div>
+        </section>
+      </main>
+      <script src="js/main.js"></script>
+</body>
+</html>
