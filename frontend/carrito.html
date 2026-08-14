@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Carrito - TechStore Pro</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- BARRA SCROLL -->
+  <div class="barra-scroll" id="barra-scroll"></div>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-logo">
+      <span class="logo-icono">💻</span>
+      <span class="logo-texto">TechStore Pro</span>
+    </div>
+
+    <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav id="nav-menu" class="nav-menu">
+      <a href="index.html">Inicio</a>
+      <a href="productos.html">Productos</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="registro.html">Registro</a>
+    </nav>
+
+    <div class="header-acciones">
+      <button id="btn-tema" class="btn-tema" aria-label="Cambiar tema">🌙</button>
+      <a href="carrito.html" class="carrito-badge-contenedor" aria-label="Ver carrito">
+        <span>🛒</span>
+        <span class="carrito-badge" id="carrito-badge">0</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- MAIN - PÁGINA DEL CARRITO -->
+  <main>
+    <section class="seccion-carrito" id="seccion-carrito">
+      <div class="seccion-header">
+        <h2>🛒 Mi carrito</h2>
+        <p id="carrito-resumen">Tu carrito está vacío</p>
+      </div>
+
+      <!-- Aquí JavaScript inyectará los productos -->
+      <div id="lista-carrito"></div>
+
+      <div class="carrito-acciones">
+        <button id="btn-vaciar" class="btn btn-secundario">🗑️ Vaciar carrito</button>
+        <a href="index.html" class="btn btn-primario">Seguir comprando</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-contenido">
+      <div class="footer-marca">
+        <span class="logo-icono">🏪</span>
+        <span class="logo-texto">Mi Proyecto</span>
+        <p>Tu tienda de tecnología en línea.</p>
+      </div>
+      <nav class="footer-nav">
+        <h4>Páginas</h4>
+        <a href="index.html">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+      <div class="footer-contacto">
+        <h4>Contacto</h4>
+        <p>📍 Ciudad, Departamento</p>
+        <p>📞 300 000 0000</p>
+        <p>✉️ info@techstorepro.co</p>
+      </div>
+    </div>
+    <div class="footer-copy">
+      <p>&copy; 2026 TechStore Pro — Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
